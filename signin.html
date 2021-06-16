@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Springfield Olympiads</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,600,700" rel="stylesheet">
+
+
+</head>
+<body class="text-center">
+
+
+<!-- HEADER =============================-->
+<header class="item header margin-top-0">
+<div class="wrapper">
+	<nav role="navigation" class="navbar navbar-white navbar-embossed navbar-lg navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button data-target="#navbar-collapse-02" data-toggle="collapse" class="navbar-toggle" type="button">
+			<i class="fa fa-bars"></i>
+			<span class="sr-only">Toggle navigation</span>
+			</button>
+			<a href="index.html" class="navbar-brand brand"> Springfield Olympiads </a>
+		</div>
+		<div id="navbar-collapse-02" class="collapse navbar-collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li class="propClone"><a href="index.html">Home</a></li>
+				<li class="propClone"><a href="register.html">Register</a></li>
+				<li class="propClone"><a href="olympiads.html">Olympiads</a></li>
+				<li class="propClone"><a href="schedule.html">TestSeries</a></li>
+				<li class="propClone"><a href="signin.html">Sign in</a></li>
+				<li class="propClone"><a href="#cont">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+	</nav>
+
+</div>
+</header>
+
+
+
+<div class="login-container">
+
+            <form onsubmit="login();return false;" id="form">
+								<img class="logo" src="C:\Users\Sharmishtha kumar\Desktop\Sprigfield Olympiads\images\logo.jpg" alt="">
+                <h2 style="text-align: center; margin-bottom: 3.1rem;" class="form-header">Sign In</h2>
+                <div class="mb-3">
+                    <label for="login-input" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="login-username" name="login-username">
+                </div>
+                <div class="mb-3">
+                    <label for="login-password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="login-password" name="login-password" autocomplete="off" aria-describedby="#passwordHelp" oninput="updatePasswordLength()">
+                    <p id="passwordHelp"></p>
+                </div>
+								<div class="d-grid gap-2 col-6 mx-auto">
+									<button type="button" class="btn btn-primary">Sign in</button>
+							   	<a href="stud.html" class="btn btn-primary">Register</a>
+								</div>
+
+                <hr>
+                <div style="display: flex; justify-content: center;">
+                    <a href="/forgotPassword" class="forgot-password"><i class="bi bi-lock-fill"></i> Forgot Password?</a>
+                </div>
+            </form>
+        </div>
+
+
+
+<!-- CALL TO ACTION =============================-->
+<section class="content-block" style="background-color:#00bba7;">
+	<div class="container text-center"><h1>CONTACT US!</h1><span>
+							<div class="form-floating mb-3">
+								<label for="floatingInput">Name</label>
+								<input type="text" class="form-control" placeholder="Name" id="floatingInput1">
+							</div>
+							<div class="form-floating mb-3">
+								<label for="floatingInput">Email address</label>
+								<input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+							</div>
+							<div class="form-floating">
+								<label for="floatingTextarea">Comments</label>
+								<textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 150px"></textarea>
+							</div>
+			 </span>
+</div>
+</section>
+
+
+<!-- FOOTER =============================-->
+<div class="footer text-center" id="cont">
+	<div class="container">
+		<div class="row">
+			<p class="footernote">
+				 Connect with us
+			</p>
+			<ul class="social-iconsfooter">
+				<li><a href="https://api.whatsapp.com/send?phone=+916230345161&text=Hi!"><i class="fa fa-whatsapp"></i></a></li>
+				<li><a href="https://www.facebook.com/sfoly/"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="https://www.instagram.com/sfolym/"><i class="fa fa-instagram"></i></a></li>
+				<li><a href="https://in.linkedin.com/company/sfoly"><i class="fa fa-linkedin"></i></a></li>
+				<li><a href="mailto:info@sfoly.com"><i class="fa fa-envelope"></i></a></li>
+			</ul>
+			<p>
+				 &copy; 2021 Springfield Olympiads<br/>
+				All Rights Reserved.  <a href="https://sfoly.com/">Springfield Olympiads</a>
+			</p>
+		</div>
+	</div>
+</div>
+
+<!-- SCRIPTS =============================-->
+<script src="js/jquery-.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/anim.js"></script>
+<script>
+//----HOVER CAPTION---//
+jQuery(document).ready(function ($) {
+	$('.fadeshop').hover(
+		function(){
+			$(this).find('.captionshop').fadeIn(150);
+		},
+		function(){
+			$(this).find('.captionshop').fadeOut(150);
+		}
+	);
+});
+</script>
+
+</body>
+</html>
